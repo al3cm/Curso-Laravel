@@ -1,6 +1,6 @@
-$('.menu_rol').on('change', function() {
+$('.permiso_rol').on('change', function() {
     var data = {
-        menu_id: $(this).data('menuid'),
+        permiso_id: $(this).data('permisoid'),
         rol_id: $(this).val(),
         _token: $('input[name=_token]').val()
     };
@@ -9,7 +9,7 @@ $('.menu_rol').on('change', function() {
     } else {
         data.estado = 0
     }
-    ajaxRequest('/admin/menu-rol', data);
+    ajaxRequest('/admin/permiso-rol', data);
 });
 
 function ajaxRequest(url, data) {

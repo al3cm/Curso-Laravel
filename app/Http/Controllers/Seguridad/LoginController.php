@@ -91,7 +91,8 @@ class LoginController extends Controller
     protected function redirectPath()
     {
         //return view('admin.admin.index');
-        return '/admin';
+        //return '/admin';
+        return '/';
     }
 
     protected function sendFailedLoginResponse(Request $request)
